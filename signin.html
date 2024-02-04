@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SMS</title>
+    <link rel="stylesheet" href="/css/reset.css">
 </head>
 <body>
-    <h1>Hello!</h1>
+    <h2>Student Management System</h2>
+    <button id="btnout" onclick="signout()">Signout</button>
+
+<form id="studentForm">
+    <label for="studentName">Student Name</label>
+    <input type="text" id="studentName" required>
+
+    <label for="studentID">Student ID</label>
+    <input type="text" id="studentID" required>
+
+    <button id="btnadd" type="button" onclick="addStudent()">Add</button>
+</form>
+
+<table id="studentTable">
+    <tr>
+        <th>Student Name</th>
+        <th>Student ID</th>
+        <th>Action</th>
+    </tr>
+</table>
+<script src="/js/crud.js"></script>
 </body>
 </html>
